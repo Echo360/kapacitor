@@ -56,6 +56,11 @@ required = [
   name= "github.com/BurntSushi/toml"
   revision = "a368813c5e648fee92e5f6c30e3944ff9d5e8895"
 
+# Pin segmentio/kafka-go @ v0.3.4 to fix: https://github.com/influxdata/kapacitor/issues/2260
+[[constraint]]
+  version = "v0.3.4"
+  name = "github.com/segmentio/kafka-go"
+
 # Force the Azure projects to be a specific older version that Prometheus needs
 [[override]]
   name = "github.com/Azure/azure-sdk-for-go"
